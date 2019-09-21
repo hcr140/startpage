@@ -1,46 +1,93 @@
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Start</title>
-		<link rel="stylesheet" type="text/css" href="styles.css">
-	</head>
-	<body>
-		<div class="pageContainer">
-			<div class="vertAlign">
+<!DOCTYPE html>
+<html lang="en">
 
-				<div class="boxContainer">
-					<div class="box">
-						<div class="boxHeader" id="boxHeader1">Hobby</div>
-						<ul>
-							<li><a href="https://github.com/">Github</a></li>
-							<li><a href="https://what.cd/">What.CD</a></li>
-						</ul>
-					</div>
-					<div class="box">
-						<div class="boxHeader" id="boxHeader2">Social</div>
-							<ul>
-								<li><a href="https://www.openmailbox.org/webmail/">Mail</a></li>
-								<li><a href="http://reddit.com">reddit</a></li>
-								<li><a href="http://news.ycombinator.com">Hacker News</a></li>
-								<li><a href="https://hangouts.google.com">Hangouts</a></li>
-							</ul>
-					</div>
-					<div class="box">
-						<div class="boxHeader" id="boxHeader3">School</div>
-							<ul>
-								<li><a href="http://www.pathwaystotechnology.com/">Pathways</a></li>
-								<li><a href="https://powerschool.hartfordschools.org/public/home.html">Powerschool</a></li>
-								<li><a href="https://drive.google.com">Drive</a></li>
-							</ul>
-					</div>
-				</div>
+<head>
+  <meta charset="UTF-8">
+  <title>start</title>
+</head>
 
-				<div class="search">
-					<form class="searchForm" method="GET" action="https://duckduckgo.com/?q=">
-						<input class="searchInput" type="text" name="q" autofocus>
-					</form>
-				</div>
-			</div>
-		</div>
-	</body>
+<body>
+  <style>
+    a:link,
+    a:visited {
+      color: #000;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #eee;
+      background-color: #000;
+    }
+
+    a {
+      padding: 5rem;
+      border-width: 8px;
+      border-style: dashed;
+      margin: 1rem;
+      flex: 1;
+    }
+
+    body {
+      background-color: #eee;
+      font-family: Helvetica, sans-serif;
+      font-size: 36px;
+      text-transform: uppercase;
+      margin: 0;
+      font-weight: bold;
+      text-align: center;
+      padding: 1rem;
+      display: inline-flex;
+      flex-wrap: wrap;
+    }
+  </style>
+  <script>
+    var links = [{
+        "title": "huskyct",
+        "url": "https://huskyct.uconn.edu/"
+      },
+      {
+        "title": "mimir",
+        "url": "https://class.mimir.io/"
+      },
+      {
+        "title": "studentadmin",
+        "url": "https://studentadmin.uconn.edu/"
+      },
+      {
+        "title": "protonmail",
+        "url": "https://protonmail.com/"
+      },
+      {
+        "title": "gmail",
+        "url": "https://mail.google.com/"
+      },
+      {
+        "title": "github",
+        "url": "https://github.com/"
+      },
+      {
+        "title": "reddit",
+        "url": "https://reddit.com/"
+      },
+      {
+        "title": "lobste.rs",
+        "url": "https://lobste.rs/"
+      },
+      {
+        "title": "youtube",
+        "url": "https://youtube.com/"
+      },
+      {
+        "title": "twitter",
+        "url": "https://twitter.com/"
+      },
+    ]
+
+    for (let l of links) {
+      var a = document.createElement("a");
+      a.textContent = l.title;
+      a.href = l.url;
+      document.getElementsByTagName("body")[0].appendChild(a);
+    }
+  </script>
 </html>
